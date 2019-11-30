@@ -73,16 +73,19 @@
       },
       {
         "__id__": 12
+      },
+      {
+        "__id__": 14
       }
     ],
     "_active": true,
     "_level": 1,
     "_components": [
       {
-        "__id__": 14
+        "__id__": 16
       },
       {
-        "__id__": 15
+        "__id__": 17
       }
     ],
     "_prefab": null,
@@ -340,8 +343,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 125,
-      "height": 102
+      "width": 88,
+      "height": 63
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -350,8 +353,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -5.399,
-      "y": -10.284,
+      "x": -2.22,
+      "y": 12.351,
       "z": 0
     },
     "_scale": {
@@ -443,8 +446,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 223.61,
-      "height": 55.56
+      "width": 134.17,
+      "height": 33.33
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -453,8 +456,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -350.558,
-      "y": 282.684,
+      "x": -379.04,
+      "y": 286.035,
       "z": 0
     },
     "_scale": {
@@ -491,7 +494,7 @@
     "_useOriginalSize": false,
     "_string": "Pilot: 0/5",
     "_N$string": "Pilot: 0/5",
-    "_fontSize": 50,
+    "_fontSize": 30,
     "_lineHeight": 40,
     "_enableWrapText": true,
     "_N$file": {
@@ -509,7 +512,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "微信图片_201911301409592",
+    "_name": "earth",
     "_objFlags": 0,
     "_parent": {
       "__id__": 2
@@ -533,8 +536,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 253,
-      "height": 75
+      "width": 385,
+      "height": 119
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -543,8 +546,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": 1.642,
-      "y": 306.793,
+      "x": -3.817,
+      "y": 290.026,
       "z": 0
     },
     "_scale": {
@@ -598,6 +601,96 @@
     "_id": "a77YNspCVF7pyVrq0SGCib"
   },
   {
+    "__type__": "cc.Node",
+    "_name": "time",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 2
+    },
+    "_children": [],
+    "_active": true,
+    "_level": 2,
+    "_components": [
+      {
+        "__id__": 15
+      }
+    ],
+    "_prefab": null,
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 105.83,
+      "height": 33.33
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_position": {
+      "__type__": "cc.Vec3",
+      "x": 395.393,
+      "y": 286.492,
+      "z": 0
+    },
+    "_scale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_is3DNode": false,
+    "groupIndex": 0,
+    "_id": "48YPDOj7ZGIo6wjxc5g2jl"
+  },
+  {
+    "__type__": "cc.Label",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 14
+    },
+    "_enabled": true,
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
+    "_useOriginalSize": false,
+    "_string": "Time: 0",
+    "_N$string": "Time: 0",
+    "_fontSize": 30,
+    "_lineHeight": 40,
+    "_enableWrapText": true,
+    "_N$file": {
+      "__uuid__": "fbb33c90-3a2b-4581-91c0-b45c9b89db30"
+    },
+    "_isSystemFontUsed": false,
+    "_spacingX": 0,
+    "_batchAsBitmap": false,
+    "_N$horizontalAlign": 1,
+    "_N$verticalAlign": 1,
+    "_N$fontFamily": "Arial",
+    "_N$overflow": 0,
+    "_N$cacheMode": 0,
+    "_id": "31z54Vl4dBvLc/54tQDgmk"
+  },
+  {
     "__type__": "cc.Canvas",
     "_name": "",
     "_objFlags": 0,
@@ -637,6 +730,7 @@
     "scoreDisplay": {
       "__id__": 11
     },
+    "timeDisplay": null,
     "scoreAudio": {
       "__uuid__": "5e9fa9a1-c6a0-4fcb-9cab-8bf22d49c771"
     },

@@ -35,6 +35,10 @@ cc.Class({
             default: null,
             type: cc.Label
         },
+        timeDisplay: {
+            default: null,
+            type: cc.Label
+        },
         // 得分音效资源
         scoreAudio: {
             default: null,
@@ -45,6 +49,7 @@ cc.Class({
 
     onLoad: function onLoad() {
         // 初始化计分
+        this.time = 0;
         this.backPilot = 0;
         this.leftPilot = 10;
         this.totalPilot = 10;
@@ -100,6 +105,8 @@ cc.Class({
 
 
     update: function update(dt) {
+        this.time += dt;
+        this.timeDisplay.string = 'Time: ' + this.time.toFixed(1);
         if (this.leftPilot <= 0) {
             this.gameOver();
         }
@@ -107,6 +114,7 @@ cc.Class({
 
     gainScore: function gainScore() {
         this.backPilot++;
+        console.log(this.backPilot);
         // 更新 scoreDisplay Label 的文字
         this.scoreDisplay.string = 'Pilot: ' + this.backPilot + '/' + this.goal;
         // 播放得分音效

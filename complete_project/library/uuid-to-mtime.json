@@ -445,8 +445,8 @@
     "relativePath": "audio\\score.mp3"
   },
   "5dcd99cb-77a4-4c95-a7d8-4b5b45295ae5": {
-    "asset": 1575128328035,
-    "meta": 1575128328048,
+    "asset": 1575130791672,
+    "meta": 1575130791694,
     "relativePath": "game.fire"
   },
   "fbb33c90-3a2b-4581-91c0-b45c9b89db30": {
@@ -506,8 +506,8 @@
   },
   "2bd95a24-2c4e-44d2-a360-e8302c90ab6c": {
     "asset": 1575102612729,
-    "meta": 1575102640810,
-    "relativePath": "微信图片_20191130140959.png"
+    "meta": 1575130548915,
+    "relativePath": "pilot.png"
   },
   "c7e7f505-0e8f-4e9e-bd0f-e728f8fad8e8": {
     "asset": 1575102612719,
@@ -516,13 +516,13 @@
   },
   "cf466d86-fb93-4aea-936a-5ed3f757b8dd": {
     "asset": 1575102612730,
-    "meta": 1575102640826,
-    "relativePath": "微信图片_201911301409592.png"
+    "meta": 1575130543449,
+    "relativePath": "earth.png"
   },
   "fba7d957-2ca2-413b-bde5-2c5d3e3aa323": {
     "asset": 1575102612730,
-    "meta": 1575102640818,
-    "relativePath": "微信图片_201911301409591.png"
+    "meta": 1575130554016,
+    "relativePath": "stone.png"
   },
   "ac7724ca-bc9b-44eb-86c0-e8ee7f06c0b3": {
     "asset": 1575102612731,
@@ -535,13 +535,13 @@
     "relativePath": "scripts\\Stone.js"
   },
   "4e12f2d2-42ed-4bf8-a57a-426c4389abd4": {
-    "asset": 1575130184352,
-    "meta": 1575130209771,
+    "asset": 1575131051096,
+    "meta": 1575131053515,
     "relativePath": "scripts\\Game.js"
   },
   "4644fd26-d96b-4005-8472-fa99fa74e686": {
-    "asset": 1575130357456,
-    "meta": 1575130361813,
+    "asset": 1575131125806,
+    "meta": 1575131129545,
     "relativePath": "scripts\\Star.js"
   }
 }

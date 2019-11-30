@@ -11,10 +11,10 @@ cc.Class({
         this.node.destroy();
         this.stone.destroy();
     },
-    onLoad: function () {
-        // 初始化旋转动作  fixme 
-      this.node.runAction(cc.repeatForever(cc.rotateBy(1,20)));//旋转当前节点（旋转指定角度用rotateBy）
-    },
+    // onLoad: function () {
+    //     // 初始化旋转动作  fixme 
+    //   this.node.runAction(cc.repeatForever(cc.rotateBy(1,20)));//旋转当前节点（旋转指定角度用rotateBy）
+    // },
 
     update: function (dt) {       
         for (let i=0; i < this.game.node.childrenCount; i++){
@@ -31,10 +31,13 @@ cc.Class({
                 this.onPicked();
                 return;
             }
+            console.log('1111')
             this.node.y += this.speed * dt;
             if (this.node.y >= this.game.node.height / 2 - 30){
                 this.speed = 10;
-            } else if (this.node.y >= this.game.node.height / 2) {
+            } 
+            if (this.node.y >= this.game.node.height / 2) {
+                console.log('---');
                 this.game.gainScore();
                 this.node.destroy();
                 return;
