@@ -255,7 +255,7 @@
       "__type__": "cc.Vec3",
       "x": 0,
       "y": 0,
-      "z": 357.6684917629732
+      "z": 365.46272039703314
     },
     "_scale": {
       "__type__": "cc.Vec3",
@@ -442,7 +442,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 190.28,
+      "width": 223.61,
       "height": 55.56
     },
     "_anchorPoint": {
@@ -488,8 +488,8 @@
       }
     ],
     "_useOriginalSize": false,
-    "_string": "Score: 0",
-    "_N$string": "Score: 0",
+    "_string": "Pilot: 0/5",
+    "_N$string": "Pilot: 0/5",
     "_fontSize": 50,
     "_lineHeight": 40,
     "_enableWrapText": true,
@@ -639,6 +639,7 @@
     "scoreAudio": {
       "__uuid__": "5e9fa9a1-c6a0-4fcb-9cab-8bf22d49c771"
     },
+    "goal": 5,
     "_id": "47kNwHwXRGsJDH/1Gz78pe"
   }
 ]

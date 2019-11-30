@@ -33,16 +33,16 @@ cc.Class({
         scoreAudio: {
             default: null,
             type: cc.AudioClip
-        }
+        },
+        goal: 5,
     },
 
     onLoad: function () {
         // 初始化计分
-        this.score = 0;
-        this.bulletNum = 10;
-        this.successNum = 0;
-        this.goal = 5;
-        this.nStone = 10;
+        this.backPilot = 0;
+        this.leftPilot = 10;
+        this.totalPilot = 10;
+        this.nStone = 20;
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);   
         this.spawnNewStone();
     },
@@ -81,6 +81,7 @@ cc.Class({
         newStar.setPosition(this.getNewStarPosition());
         // 在星星组件上暂存 Game 对象的引用
         newStar.getComponent('Star').game = this;
+        this.leftPilot --;
     },
     getStonePosition() {
         return cc.v2(this.player.x , this.player.y);
@@ -91,24 +92,15 @@ cc.Class({
     },
 
     update: function (dt) {
-        if (this.bulletNum <= 0 && this.successNum < this.goal) {
+        if (this.leftPilot <= 0) {
             this.gameOver();
-        } 
-        // 每帧更新计时器，超过限度还没有生成新的星星
-        // 就会调用游戏失败逻辑
-        // if (this.timer > this.starDuration) {
-        //     this.gameOver();
-        //     this.enabled = false;   // disable gameOver logic to avoid load scene repeatedly
-        //     return;
-        // }
-        // this.timer += dt;
+        }
     },
 
     gainScore: function () {
-        this.score += 1;
-        this.bulletNum -= 1;
+        this.backPilot++;
         // 更新 scoreDisplay Label 的文字
-        this.scoreDisplay.string = 'Score: ' + this.score;
+        this.scoreDisplay.string = 'Pilot: ' + this.backPilot + '/' + this.goal;
         // 播放得分音效
         cc.audioEngine.playEffect(this.scoreAudio, false);
     },

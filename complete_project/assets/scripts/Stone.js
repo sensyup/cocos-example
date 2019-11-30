@@ -14,30 +14,16 @@ cc.Class({
     properties: {
         speed: 40,
         angle: 0,
-        // foo: {
-        //     // ATTRIBUTES:
-        //     default: null,        // The default value will be used only when the component attaching
-        //                           // to a node for the first time
-        //     type: cc.SpriteFrame, // optional, default is typeof default
-        //     serializable: true,   // optional, default is true
-        // },
-        // bar: {
-        //     get () {
-        //         return this._bar;
-        //     },
-        //     set (value) {
-        //         this._bar = value;
-        //     }
-        // },
     },
 
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
-        // var repeat = cc.repeatForever(cc.rotateBy(1.0, this.speed));
-        // this.node.runAction(repeat);
-        this.angle = this.angle + Math.random() * Math.PI;
+        this.angle = this.angle + Math.random() * 2 * Math.PI;
         this.radius = 100 + Math.random() * 200;
+        let size = 100 * Math.random() + 60;
+        this.node.width = size;
+        this.node.height = size;
     },
 
     start () {

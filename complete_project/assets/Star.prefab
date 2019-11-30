@@ -112,8 +112,8 @@
       "__id__": 1
     },
     "_enabled": true,
-    "pickRadius": 60,
-    "speed": 150,
+    "pickRadius": 50,
+    "speed": 60,
     "_id": ""
   },
   {
