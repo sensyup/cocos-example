@@ -42,7 +42,7 @@ cc.Class({
         this.bulletNum = 10;
         this.successNum = 0;
         this.goal = 5;
-        this.nStone = 3;
+        this.nStone = 10;
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);   
         this.spawnNewStone();
     },
@@ -59,15 +59,19 @@ cc.Class({
         // 取消键盘输入监听
         cc.systemEvent.off(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);
     },
-    spawnNewStone: function() {
+
+    spawnNewStone: function() { 
+        //stonePool = new cc.NodePool();    
         for (var i = 0; i < this.nStone; i++) {
             var newStone = cc.instantiate(this.stonePrefab);
             newStone.setPosition(this.getStonePosition());           
             newStone.getComponent("Stone").game = this;
             newStone.index = i + 1;
             this.node.addChild(newStone);
+            //stonePool.put(newStone);
         }
     },
+
     spawnNewStar: function() {
         // 使用给定的模板在场景中生成一个新节点
         var newStar = cc.instantiate(this.starPrefab);

@@ -37,14 +37,14 @@ cc.Class({
         // var repeat = cc.repeatForever(cc.rotateBy(1.0, this.speed));
         // this.node.runAction(repeat);
         this.angle = this.angle + Math.random() * Math.PI;
+        this.radius = 100 + Math.random() * 200;
     },
 
     start () {
 
     },
 
-    update (dt) {
-        this.radius = 100 * this.node.index;
+    update (dt) {      
         this.angle = this.angle + dt;
         this.node.x=this.game.player.x+Math.cos(this.angle)*this.radius;
         this.node.y=this.game.player.y+Math.sin(this.angle)*this.radius;

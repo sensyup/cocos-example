@@ -10,11 +10,7 @@ cc.Class({
     getWallDistance: function () {
         // 根据 player 节点位置判断距离
         // console.log(this.game.node);
-        var playerPos = this.game.stone.getPosition();
-        // console.log(playerPos)
-        // console.log(this.node.position);
-        // 根据两点位置计算两点之间距离
-        var dist = this.node.position.sub(playerPos).mag();
+        
         return dist;
     },
 
@@ -25,21 +21,32 @@ cc.Class({
         this.game.gainScore();
         // 然后销毁当前星星节点
         this.node.destroy();
-        this.game.stone.destroy();
+        this.stone.destroy();
     },
 
     update: function (dt) {
-        let dist = this.getWallDistance();        
+        //let dist = this.getWallDistance();        
+        for (let i=0; i < this.game.node.childrenCount; i++){
+            if(this.game.node.children[i]['_name'] != 'stone'){
+                continue
+            }
+            this.stone = this.game.node.children[i];
+            var stonePos = this.stone.getPosition();
+            console.log(stonePos)
+            // console.log(this.node.position);
+            // 根据两点位置计算两点之间距离
+            var dist = this.node.position.sub(stonePos).mag();
         // 每帧判断和主角之间的距离是否小于收集距离
-        if (dist < this.pickRadius) {
-            console.log('-------------');
-            // 调用收集行为
-            this.onPicked();
-            return;
-        }
-        this.node.y += this.speed * dt;
-        if (this.node.y > this.game.node.height / 2) {
-            this.node.destroy();
+            if (dist < this.pickRadius) {
+                console.log('-------------');
+                // 调用收集行为
+                this.onPicked();
+                return;
+            }
+            this.node.y += this.speed * dt;
+            if (this.node.y > this.game.node.height / 2) {
+                this.node.destroy();
+            }
         }
     },
 });

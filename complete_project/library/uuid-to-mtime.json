@@ -469,11 +469,6 @@
     "meta": 1575097560557,
     "relativePath": "scripts\\Player.js"
   },
-  "4644fd26-d96b-4005-8472-fa99fa74e686": {
-    "asset": 1575095588756,
-    "meta": 1575097560584,
-    "relativePath": "scripts\\Star.js"
-  },
   "3ccd5b0c-fd42-4360-8b3d-30e9cd933e6d": {
     "asset": 1575095588716,
     "meta": 1575097560638,
@@ -534,14 +529,19 @@
     "meta": 1575097560829,
     "relativePath": "陨石.jpg"
   },
+  "4644fd26-d96b-4005-8472-fa99fa74e686": {
+    "asset": 1575101630266,
+    "meta": 1575101632653,
+    "relativePath": "scripts\\Star.js"
+  },
   "ab8afba3-9949-4cf8-9c7a-ded165886514": {
-    "asset": 1575097972720,
-    "meta": 1575097980292,
+    "asset": 1575102013979,
+    "meta": 1575102015029,
     "relativePath": "scripts\\Stone.js"
   },
   "4e12f2d2-42ed-4bf8-a57a-426c4389abd4": {
-    "asset": 1575098050478,
-    "meta": 1575098052744,
+    "asset": 1575102041359,
+    "meta": 1575102042457,
     "relativePath": "scripts\\Game.js"
   }
 }
