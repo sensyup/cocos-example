@@ -66,16 +66,11 @@ cc.Class({
     },
     spawnNewStone: function spawnNewStone() {
         // 使用给定的模板在场景中生成一个新节点
-        //  let  = -10;
-        //  let anchorY = 0.5;
         var stone = cc.instantiate(this.stonePrefab);
         // 将新增的节点添加到 Canvas 节点下面
         this.node.addChild(stone);
         // 为星星设置一个随机位置
         stone.setPosition(this.getStonePosition());
-        stone.setAnchorPoint(cc.v2(2, 2));
-        //  stone.anchorX = anchorX;
-        //  stone.anchorY = anchorY;
         // 在星星组件上暂存 Game 对象的引用
         stone.getComponent('Stone').game = this;
         this.stone = stone;

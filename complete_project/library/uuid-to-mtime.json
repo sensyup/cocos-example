@@ -440,8 +440,8 @@
     "relativePath": "mikado_outline_shadow.fnt"
   },
   "5dcd99cb-77a4-4c95-a7d8-4b5b45295ae5": {
-    "asset": 1574601265292,
-    "meta": 1574601265303,
+    "asset": 1575095259997,
+    "meta": 1575095260017,
     "relativePath": "game.fire"
   },
   "51b0ea7f-a166-4130-bf0b-7f70fc60cb1d": {
@@ -450,8 +450,8 @@
     "relativePath": "scripts"
   },
   "3ccd5b0c-fd42-4360-8b3d-30e9cd933e6d": {
-    "asset": 1574694616063,
-    "meta": 1574694616092,
+    "asset": 1575094656102,
+    "meta": 1575094656129,
     "relativePath": "Star.prefab"
   },
   "f2bd42d3-db89-4efd-b925-6233e5f0d525": {
@@ -494,29 +494,54 @@
     "meta": 1574599497799,
     "relativePath": "scripts\\Player.js"
   },
-  "d5d38d85-9e14-422c-808b-3a51ac30e36d": {
-    "asset": 1574599653206,
-    "meta": 1574599653252,
-    "relativePath": "stone.jpg"
-  },
   "6b8ee13b-3d89-4545-8f1b-d10fbaa819a9": {
-    "asset": 1574601263241,
-    "meta": 1574601263255,
+    "asset": 1575094764888,
+    "meta": 1575094764904,
     "relativePath": "Stone.prefab"
   },
   "4e12f2d2-42ed-4bf8-a57a-426c4389abd4": {
-    "asset": 1574694397496,
-    "meta": 1574694398514,
+    "asset": 1575089821086,
+    "meta": 1575089991001,
     "relativePath": "scripts\\Game.js"
   },
   "4644fd26-d96b-4005-8472-fa99fa74e686": {
-    "asset": 1574694955616,
-    "meta": 1574694956486,
+    "asset": 1575091493208,
+    "meta": 1575092308030,
     "relativePath": "scripts\\Star.js"
   },
   "ab8afba3-9949-4cf8-9c7a-ded165886514": {
-    "asset": 1574695527855,
-    "meta": 1574695530053,
+    "asset": 1575091529275,
+    "meta": 1575092308030,
     "relativePath": "scripts\\Stone.js"
+  },
+  "04da7353-8628-4a7e-a656-794fd1334bbe": {
+    "asset": 1575094252656,
+    "meta": 1575094252681,
+    "relativePath": "sky.jpg"
+  },
+  "cf466d86-fb93-4aea-936a-5ed3f757b8dd": {
+    "asset": 1575094272135,
+    "meta": 1575094272154,
+    "relativePath": "微信图片_201911301409592.png"
+  },
+  "2bd95a24-2c4e-44d2-a360-e8302c90ab6c": {
+    "asset": 1575094353768,
+    "meta": 1575094353794,
+    "relativePath": "微信图片_20191130140959.png"
+  },
+  "ac7724ca-bc9b-44eb-86c0-e8ee7f06c0b3": {
+    "asset": 1575094385216,
+    "meta": 1575094385249,
+    "relativePath": "陨石.jpg"
+  },
+  "fba7d957-2ca2-413b-bde5-2c5d3e3aa323": {
+    "asset": 1575094456778,
+    "meta": 1575094456808,
+    "relativePath": "微信图片_201911301409591.png"
+  },
+  "68c55e83-7cb3-4dab-8b31-e1b9a40855cb": {
+    "asset": 1575095177054,
+    "meta": 1575095177089,
+    "relativePath": "d22c841dba16ac299dc197ad9a7edac.png"
   }
 }

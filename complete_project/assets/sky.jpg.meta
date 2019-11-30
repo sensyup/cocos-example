@@ -1,6 +1,6 @@
 {
   "ver": "2.3.3",
-  "uuid": "d5d38d85-9e14-422c-808b-3a51ac30e36d",
+  "uuid": "04da7353-8628-4a7e-a656-794fd1334bbe",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -9,10 +9,10 @@
   "packable": true,
   "platformSettings": {},
   "subMetas": {
-    "stone": {
+    "sky": {
       "ver": "1.0.4",
-      "uuid": "069e62c9-af79-4cd2-87ef-9c2195cbdffb",
-      "rawTextureUuid": "d5d38d85-9e14-422c-808b-3a51ac30e36d",
+      "uuid": "599d76f5-7ee5-43e4-9446-e68e638d5e65",
+      "rawTextureUuid": "04da7353-8628-4a7e-a656-794fd1334bbe",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -20,10 +20,10 @@
       "offsetY": 0,
       "trimX": 0,
       "trimY": 0,
-      "width": 450,
-      "height": 450,
-      "rawWidth": 450,
-      "rawHeight": 450,
+      "width": 1024,
+      "height": 768,
+      "rawWidth": 1024,
+      "rawHeight": 768,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,

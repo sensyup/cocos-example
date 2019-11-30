@@ -44,20 +44,10 @@ cc.Class({
         // this.node.runAction(repeat);
     },
     start: function start() {},
-    setRotateAction: function setRotateAction() {
-        // 旋转
-        // var actionBy = cc.rotateBy(2, 4);
-        // // 不断重复
-        // return cc.repeatForever(actionBy);
-
-    },
     update: function update(dt) {
         this.angle = this.angle + dt;
-        console.log(this.game.player.x);
-        console.log(this.game.player.y);
-        this.node.x = this.game.player.x + Math.cos(this.angle) * 50;
-        this.node.y = this.game.player.y + Math.sin(this.angle) * 50;
-        console.log(this.node.x);
+        this.node.x = this.game.player.x + Math.cos(this.angle) * 200;
+        this.node.y = this.game.player.y + Math.sin(this.angle) * 200;
     }
 });
 

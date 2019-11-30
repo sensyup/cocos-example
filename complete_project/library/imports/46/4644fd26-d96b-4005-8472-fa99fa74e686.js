@@ -2,14 +2,14 @@
 cc._RF.push(module, '4644f0m2WtABYRy+pn6dOaG', 'Star');
 // scripts/Star.js
 
-"use strict";
+'use strict';
 
 cc.Class({
     extends: cc.Component,
 
     properties: {
         // 星星和主角之间的距离小于这个数值时，就会完成收集
-        pickRadius: 0,
+        pickRadius: 30,
         speed: 80
     },
 
@@ -17,8 +17,8 @@ cc.Class({
         // 根据 player 节点位置判断距离
         // console.log(this.game.node);
         var playerPos = this.game.stone.getPosition();
-        console.log(playerPos);
-        console.log(this.node.position);
+        // console.log(playerPos)
+        // console.log(this.node.position);
         // 根据两点位置计算两点之间距离
         var dist = this.node.position.sub(playerPos).mag();
         return dist;
@@ -31,13 +31,14 @@ cc.Class({
         this.game.gainScore();
         // 然后销毁当前星星节点
         this.node.destroy();
+        this.game.stone.destroy();
     },
 
     update: function update(dt) {
-        console.log(this.getWallDistance());
-
+        var dist = this.getWallDistance();
         // 每帧判断和主角之间的距离是否小于收集距离
-        if (this.getWallDistance() < this.pickRadius) {
+        if (dist < this.pickRadius) {
+            console.log('-------------');
             // 调用收集行为
             this.onPicked();
             return;
