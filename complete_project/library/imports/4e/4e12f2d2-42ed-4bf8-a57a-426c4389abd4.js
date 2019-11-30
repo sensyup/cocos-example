@@ -2,7 +2,7 @@
 cc._RF.push(module, '4e12fLSQu1L+KV6QmxDiavU', 'Game');
 // scripts/Game.js
 
-'use strict';
+"use strict";
 
 cc.Class({
     extends: cc.Component,
@@ -106,7 +106,8 @@ cc.Class({
 
     update: function update(dt) {
         this.time += dt;
-        this.timeDisplay.string = 'Time: ' + this.time.toFixed(1);
+        //console.log(this.time.toFixed(1));
+        this.node.getChildByName("time").getComponent(cc.Label).string = 'Time: ' + this.time.toFixed(1) + 's';
         if (this.leftPilot <= 0) {
             this.gameOver();
         }
@@ -122,6 +123,12 @@ cc.Class({
     },
 
     gameOver: function gameOver() {
+        for (var i = 0; i < this.node.childrenCount; i++) {
+            if (this.node.children[i]['_name'] != 'stone') {
+                continue;
+            }
+            this.node.children[i].stopAllActions();
+        }
         this.player.stopAllActions(); //停止 player 节点的跳跃动作
         cc.director.loadScene('game');
     }

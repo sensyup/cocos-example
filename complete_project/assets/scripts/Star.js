@@ -11,10 +11,12 @@ cc.Class({
         this.node.destroy();
         this.stone.destroy();
     },
-    // onLoad: function () {
-    //     // 初始化旋转动作  fixme 
-    //   this.node.runAction(cc.repeatForever(cc.rotateBy(1,20)));//旋转当前节点（旋转指定角度用rotateBy）
-    // },
+
+    onLoad: function () {
+         // 初始化旋转动作  fixme 
+        this.node.runAction(cc.repeatForever(cc.rotateBy(0.1,180)));//旋转当前节点（旋转指定角度用rotateBy）
+        this.speed = 30;
+    },
 
     update: function (dt) {       
         for (let i=0; i < this.game.node.childrenCount; i++){
@@ -43,5 +45,5 @@ cc.Class({
                 return;
             }
         }
-    },
+    }, 
 });
