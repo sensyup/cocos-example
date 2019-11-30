@@ -48,6 +48,7 @@ cc.Class({
         this.bulletNum = 10;
         this.successNum = 0;
         this.goal = 5;
+        this.nStone = 3;
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);
         this.spawnNewStone();
     },
@@ -64,18 +65,16 @@ cc.Class({
         // 取消键盘输入监听
         cc.systemEvent.off(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);
     },
-    spawnNewStone: function spawnNewStone() {
-        // 使用给定的模板在场景中生成一个新节点
-        var stone = cc.instantiate(this.stonePrefab);
-        // 将新增的节点添加到 Canvas 节点下面
-        this.node.addChild(stone);
-        // 为星星设置一个随机位置
-        stone.setPosition(this.getStonePosition());
-        // 在星星组件上暂存 Game 对象的引用
-        stone.getComponent('Stone').game = this;
-        this.stone = stone;
-    },
 
+    spawnNewStone: function spawnNewStone() {
+        for (var i = 0; i < this.nStone; i++) {
+            var newStone = cc.instantiate(this.stonePrefab);
+            newStone.setPosition(this.getStonePosition());
+            newStone.getComponent("Stone").game = this;
+            newStone.index = i + 1;
+            this.node.addChild(newStone);
+        }
+    },
     spawnNewStar: function spawnNewStar() {
         // 使用给定的模板在场景中生成一个新节点
         var newStar = cc.instantiate(this.starPrefab);
