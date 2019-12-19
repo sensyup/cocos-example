@@ -1,14 +1,15 @@
 {
   "version": "1.1.1",
   "windows": {
+    "worker": {},
     "main": {
       "main": true,
       "url": "app://editor/index.html",
       "windowType": "dockable",
-      "x": -1284,
-      "y": -89,
-      "width": 1034,
-      "height": 1056,
+      "x": 792,
+      "y": 28,
+      "width": 1066,
+      "height": 1049,
       "layout": {
         "children": [
           {
@@ -18,7 +19,7 @@
                 "children": [
                   "hierarchy"
                 ],
-                "height": 468.265625,
+                "height": 467,
                 "type": "panel",
                 "width": 204
               },
@@ -27,12 +28,12 @@
                 "children": [
                   "assets"
                 ],
-                "height": 466.71875,
+                "height": 461,
                 "type": "panel",
                 "width": 204
               }
             ],
-            "height": 937,
+            "height": 930,
             "type": "dock-v",
             "width": 204
           },
@@ -43,9 +44,9 @@
                 "children": [
                   "scene"
                 ],
-                "height": 468.265625,
+                "height": 467,
                 "type": "panel",
-                "width": 506
+                "width": 504
               },
               {
                 "active": 0,
@@ -54,14 +55,14 @@
                   "timeline",
                   "game-window"
                 ],
-                "height": 466.71875,
+                "height": 461,
                 "type": "panel",
-                "width": 506
+                "width": 504
               }
             ],
-            "height": 937,
+            "height": 930,
             "type": "dock-v",
-            "width": 506
+            "width": 504
           },
           {
             "active": 0,
@@ -69,9 +70,9 @@
               "inspector",
               "cocos-services"
             ],
-            "height": 937,
+            "height": 930,
             "type": "panel",
-            "width": 304
+            "width": 338
           }
         ],
         "type": "dock-h"
@@ -94,6 +95,12 @@
       "y": 98,
       "width": 600,
       "height": 565
+    },
+    "sprite-editor": {
+      "x": 702,
+      "y": 240,
+      "width": 516,
+      "height": 539
     }
   }
 }

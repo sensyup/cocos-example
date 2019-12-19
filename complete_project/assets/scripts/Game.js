@@ -15,12 +15,16 @@ cc.Class({
         maxStarDuration: 0,
         minStarDuration: 0,
         // 地面节点，用于确定星星生成的高度
-        ground: {
+        // player 节点，用于获取主角弹跳的高度，和控制主角行动开关
+        player: {
             default: null,
             type: cc.Node
         },
-        // player 节点，用于获取主角弹跳的高度，和控制主角行动开关
-        player: {
+        btnNode: {
+            default: null,
+            type: cc.Node
+        },
+        gameOverNode: {
             default: null,
             type: cc.Node
         },
@@ -48,9 +52,25 @@ cc.Class({
         this.leftPilot = 10;
         this.totalPilot = 10;
         this.nStone = 20;
-        cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);   
+        this.enabled = false;
+        cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);
+    },
+
+    resetValue: function (){
+        this.time = 0;
+        this.backPilot = 0;
+        this.leftPilot = 10;
+        this.totalPilot = 10;
+    },
+
+    onStartGame: function () {
+        this.resetValue();
+        this.enabled = true;
+        this.gameOverNode.active = false;
+        this.btnNode.x = 3000;
         this.spawnNewStone();
     },
+
     onKeyUp (event) {
         // unset a flag when key released
         switch(event.keyCode) {
@@ -119,9 +139,14 @@ cc.Class({
             if(this.node.children[i]['_name'] != 'stone'){
                 continue;
             }
-            this.node.children[i].stopAllActions();                
+            //this.node.children[i].stopAllActions();
+            this.node.children[i].destroy();                
         }
-        this.player.stopAllActions(); //停止 player 节点的跳跃动作
-        cc.director.loadScene('game');
+        this.gameOverNode.active = true;
+        this.btnNode.x = 0;
+        this.enabled = false;
+        //this.player.stopAllActions(); //停止 player 节点的跳跃动作
+        //this.node.newStar.destroy();
+        //cc.director.loadScene('game');
     }
 });
