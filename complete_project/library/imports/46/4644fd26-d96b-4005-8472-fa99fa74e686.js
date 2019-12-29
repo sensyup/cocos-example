@@ -14,6 +14,7 @@ cc.Class({
     },
 
     onPicked: function onPicked() {
+        cc.audioEngine.playEffect(this.game.boomAudio, false);
         this.node.destroy();
         this.stone.destroy();
     },

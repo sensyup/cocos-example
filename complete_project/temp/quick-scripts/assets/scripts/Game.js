@@ -2,7 +2,7 @@
 cc._RF.push(module, '4e12fLSQu1L+KV6QmxDiavU', 'Game', __filename);
 // scripts/Game.js
 
-"use strict";
+'use strict';
 
 cc.Class({
     extends: cc.Component,
@@ -30,7 +30,11 @@ cc.Class({
             default: null,
             type: cc.Node
         },
-        gameOverNode: {
+        finalTimeNode: {
+            default: null,
+            type: cc.Node
+        },
+        instructionNode: {
             default: null,
             type: cc.Node
         },
@@ -48,6 +52,14 @@ cc.Class({
             default: null,
             type: cc.AudioClip
         },
+        cryAudio: {
+            default: null,
+            type: cc.AudioClip
+        },
+        boomAudio: {
+            default: null,
+            type: cc.AudioClip
+        },
         goal: 5
     },
 
@@ -56,23 +68,23 @@ cc.Class({
         this.time = 0;
         this.backPilot = 0;
         this.leftPilot = 10;
-        this.totalPilot = 10;
         this.nStone = 20;
         this.enabled = false;
-        cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);
     },
 
     resetValue: function resetValue() {
         this.time = 0;
         this.backPilot = 0;
         this.leftPilot = 10;
-        this.totalPilot = 10;
     },
 
     onStartGame: function onStartGame() {
+        cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);
         this.resetValue();
+        this.scoreDisplay.string = 'Pilot: ' + this.backPilot + '/' + this.goal;
         this.enabled = true;
-        this.gameOverNode.active = false;
+        this.finalTimeNode.active = false;
+        this.instructionNode.active = false;
         this.btnNode.x = 3000;
         this.spawnNewStone();
     },
@@ -106,6 +118,7 @@ cc.Class({
 
     spawnNewStar: function spawnNewStar() {
         // 使用给定的模板在场景中生成一个新节点
+        cc.audioEngine.playEffect(this.cryAudio, false);
         var newStar = cc.instantiate(this.starPrefab);
         // 将新增的节点添加到 Canvas 节点下面
         this.node.addChild(newStar);
@@ -128,14 +141,13 @@ cc.Class({
         this.time += dt;
         //console.log(this.time.toFixed(1));
         this.node.getChildByName("time").getComponent(cc.Label).string = 'Time: ' + this.time.toFixed(1) + 's';
-        if (this.leftPilot <= 0) {
+        if (this.backPilot == this.goal || this.leftPilot == 0) {
             this.gameOver();
         }
     },
 
     gainScore: function gainScore() {
         this.backPilot++;
-        console.log(this.backPilot);
         // 更新 scoreDisplay Label 的文字
         this.scoreDisplay.string = 'Pilot: ' + this.backPilot + '/' + this.goal;
         // 播放得分音效
@@ -144,18 +156,23 @@ cc.Class({
 
     gameOver: function gameOver() {
         for (var i = 0; i < this.node.childrenCount; i++) {
-            if (this.node.children[i]['_name'] != 'stone') {
-                continue;
+            if (this.node.children[i]['_name'] == 'stone' || this.node.children[i]['_name'] == 'star') {
+                this.node.children[i].destroy();
             }
-            //this.node.children[i].stopAllActions();
-            this.node.children[i].destroy();
         }
-        this.gameOverNode.active = true;
+
         this.btnNode.x = 0;
         this.enabled = false;
-        //this.player.stopAllActions(); //停止 player 节点的跳跃动作
-        //this.node.newStar.destroy();
         //cc.director.loadScene('game');
+        this.finalTimeNode.active = true;
+        this.instructionNode.active = true;
+        if (this.leftPilot == 0) {
+            this.finalTimeNode.getComponent(cc.Label).string = "Mission failed.";
+        }
+        if (this.backPilot == this.goal) {
+            this.finalTimeNode.getComponent(cc.Label).string = "Time used: " + this.time.toFixed(1) + "s";
+        }
+        cc.systemEvent.off(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);
     }
 });
 
