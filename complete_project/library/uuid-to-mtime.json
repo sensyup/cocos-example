@@ -70,12 +70,12 @@
     "relativePath": "resources\\materials"
   },
   "8f32b26a-6446-43a5-893b-e476e6a29b9b": {
-    "asset": 1575097539249,
+    "asset": 1577840452582,
     "meta": 1574698218313,
     "relativePath": "audio"
   },
   "51b0ea7f-a166-4130-bf0b-7f70fc60cb1d": {
-    "asset": 1576721623375,
+    "asset": 1577596059851,
     "meta": 1574698218321,
     "relativePath": "scripts"
   },
@@ -490,8 +490,8 @@
     "relativePath": "陨石.jpg"
   },
   "5dcd99cb-77a4-4c95-a7d8-4b5b45295ae5": {
-    "asset": 1576739445125,
-    "meta": 1576739445185,
+    "asset": 1577602972788,
+    "meta": 1577602972866,
     "relativePath": "game.fire"
   },
   "ab8afba3-9949-4cf8-9c7a-ded165886514": {

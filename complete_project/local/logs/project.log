@@ -1,0 +1,68 @@
+2020-01-01T01:14:24.645Z - normal: Load ~/.CocosCreator/settings.json
+2020-01-01T01:14:26.066Z - normal: Initializing Asset Database
+2020-01-01T01:14:26.079Z - normal: checking language setting...
+2020-01-01T01:14:26.079Z - normal: Language: zh
+2020-01-01T01:14:27.959Z - success: preview server running at http://localhost:7456
+2020-01-01T01:14:27.963Z - success: protocol editor-framework registered
+2020-01-01T01:14:27.964Z - success: protocol app registered
+2020-01-01T01:14:27.964Z - success: protocol theme registered
+2020-01-01T01:14:27.964Z - success: protocol packages registered
+2020-01-01T01:14:27.964Z - success: protocol uuid registerred
+2020-01-01T01:14:27.964Z - success: protocol db registerred
+2020-01-01T01:14:27.964Z - success: protocol thumbnail registerred
+2020-01-01T01:14:27.964Z - success: protocol unpack registerred
+2020-01-01T01:14:27.965Z - success: protocol disable-commonjs registerred
+2020-01-01T01:14:28.706Z - normal: connected!
+2020-01-01T01:14:28.707Z - normal: Check project F:\code\cocos-example\complete_project
+2020-01-01T01:14:28.710Z - normal: Initializing project F:\code\cocos-example\complete_project
+2020-01-01T01:14:29.299Z - normal: Initializing Cocos2d
+2020-01-01T01:14:35.416Z - normal: Initializing engine extends
+2020-01-01T01:14:35.458Z - success: alipay-adapter loaded
+2020-01-01T01:14:35.483Z - success: asset-db-debugger loaded
+2020-01-01T01:14:35.495Z - success: baidu-adapter loaded
+2020-01-01T01:14:35.556Z - success: color-picker loaded
+2020-01-01T01:14:36.045Z - success: fb-audience-network loaded
+2020-01-01T01:14:36.229Z - success: fb-live-stream loaded
+2020-01-01T01:14:36.274Z - success: google-play-instant loaded
+2020-01-01T01:14:36.537Z - success: huawei-runtime loaded
+2020-01-01T01:14:38.008Z - success: cpk-publish loaded
+2020-01-01T01:14:38.026Z - success: jsb-adapter loaded
+2020-01-01T01:14:38.058Z - success: oppo-runtime loaded
+2020-01-01T01:14:38.114Z - success: package-manager loaded
+2020-01-01T01:14:38.396Z - success: qqplay-adapter loaded
+2020-01-01T01:14:38.409Z - success: runtime-dev-tools loaded
+2020-01-01T01:14:38.433Z - success: sdkbox loaded
+2020-01-01T01:14:38.450Z - success: tester loaded
+2020-01-01T01:14:38.464Z - success: ui-kit-preview-extra loaded
+2020-01-01T01:14:38.479Z - success: ui-kit-preview loaded
+2020-01-01T01:14:38.482Z - success: ui-kit loaded
+2020-01-01T01:14:38.537Z - success: vivo-runtime loaded
+2020-01-01T01:14:38.543Z - success: weapp-adapter loaded
+2020-01-01T01:14:38.549Z - success: xiaomi-adapter loaded
+2020-01-01T01:14:38.553Z - success: alipay-minigame loaded
+2020-01-01T01:14:38.625Z - success: assets loaded
+2020-01-01T01:14:38.628Z - success: builder loaded
+2020-01-01T01:14:39.065Z - success: cocos-services loaded
+2020-01-01T01:14:39.072Z - success: console loaded
+2020-01-01T01:14:39.129Z - success: fb-instant-games loaded
+2020-01-01T01:14:39.134Z - success: game-window loaded
+2020-01-01T01:14:39.136Z - success: google-instant-games loaded
+2020-01-01T01:14:39.142Z - success: hierarchy loaded
+2020-01-01T01:14:39.146Z - success: inspector loaded
+2020-01-01T01:14:39.148Z - success: keystore loaded
+2020-01-01T01:14:39.153Z - success: node-library loaded
+2020-01-01T01:14:39.156Z - success: package-asset loaded
+2020-01-01T01:14:39.158Z - success: preferences loaded
+2020-01-01T01:14:39.161Z - success: project-exporter loaded
+2020-01-01T01:14:39.164Z - success: project-importer loaded
+2020-01-01T01:14:39.167Z - success: project-settings loaded
+2020-01-01T01:14:39.172Z - success: scene loaded
+2020-01-01T01:14:39.174Z - success: simulator-debugger loaded
+2020-01-01T01:14:39.176Z - success: sprite-editor loaded
+2020-01-01T01:14:39.180Z - success: store loaded
+2020-01-01T01:14:39.188Z - success: timeline loaded
+2020-01-01T01:14:39.194Z - success: xiaomi-runtime loaded
+2020-01-01T01:14:42.670Z - normal: Loading packages
+2020-01-01T01:14:42.679Z - normal: Watching packages
+2020-01-01T01:14:43.409Z - normal: Run Application
+2020-01-01T01:14:45.536Z - info: Cocos Services load base data!
