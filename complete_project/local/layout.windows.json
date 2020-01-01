@@ -1,14 +1,15 @@
 {
   "version": "1.1.1",
   "windows": {
+    "worker": {},
     "main": {
       "main": true,
       "url": "app://editor/index.html",
       "windowType": "dockable",
-      "x": 162,
-      "y": 4,
-      "width": 1271,
-      "height": 1049,
+      "x": 0,
+      "y": 23,
+      "width": 1440,
+      "height": 805,
       "layout": {
         "children": [
           {
@@ -18,23 +19,23 @@
                 "children": [
                   "hierarchy"
                 ],
-                "height": 467,
+                "height": 362.984375,
                 "type": "panel",
-                "width": 244
+                "width": 279.953125
               },
               {
                 "active": 0,
                 "children": [
                   "assets"
                 ],
-                "height": 461,
+                "height": 358,
                 "type": "panel",
-                "width": 244
+                "width": 279.953125
               }
             ],
-            "height": 930,
+            "height": 723,
             "type": "dock-v",
-            "width": 244
+            "width": 279.953125
           },
           {
             "children": [
@@ -43,9 +44,9 @@
                 "children": [
                   "scene"
                 ],
-                "height": 467,
+                "height": 362.984375,
                 "type": "panel",
-                "width": 603
+                "width": 692.5
               },
               {
                 "active": 0,
@@ -54,14 +55,14 @@
                   "timeline",
                   "game-window"
                 ],
-                "height": 461,
+                "height": 358,
                 "type": "panel",
-                "width": 603
+                "width": 692.5
               }
             ],
-            "height": 930,
+            "height": 723,
             "type": "dock-v",
-            "width": 603
+            "width": 692.5
           },
           {
             "active": 0,
@@ -69,9 +70,9 @@
               "inspector",
               "cocos-services"
             ],
-            "height": 930,
+            "height": 723,
             "type": "panel",
-            "width": 404
+            "width": 463.5625
           }
         ],
         "type": "dock-h"

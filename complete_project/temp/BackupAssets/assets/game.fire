@@ -267,7 +267,7 @@
       "__type__": "cc.Vec3",
       "x": 0,
       "y": 0,
-      "z": 364.5966949932487
+      "z": 273.6504959489485
     },
     "_scale": {
       "__type__": "cc.Vec3",
@@ -538,8 +538,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": 411.005,
-      "y": 281.06,
+      "x": 364.626,
+      "y": 274.103,
       "z": 0
     },
     "_scale": {
@@ -1060,14 +1060,12 @@
       "__id__": 2
     },
     "_enabled": true,
-    "starPrefab": {
+    "pilotPrefab": {
       "__uuid__": "3ccd5b0c-fd42-4360-8b3d-30e9cd933e6d"
     },
     "stonePrefab": {
       "__uuid__": "6b8ee13b-3d89-4545-8f1b-d10fbaa819a9"
     },
-    "maxStarDuration": 3,
-    "minStarDuration": 5,
     "player": {
       "__id__": 7
     },
